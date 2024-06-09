@@ -1,0 +1,137 @@
+db.Passengers.insertOne({
+  "Passengers_id": ObjectId("60c72b2f9af1b61b8f8f0c3c"),
+  "first_name": "John",
+  "Last_name": "Doe",
+  "gender": "male",
+  "age": 32,
+  "survived": true,
+  "SibSp": 1,
+  "ParCH": 0,
+  "family_size": 2,
+  "adress": {
+    "country_name": "USA",
+    "street": "123 Main St",
+    "postal_code": "10001",
+    "town": "New York",
+    "state": "NY"
+  },
+  "tickets": [{
+    "purchase_date": Timestamp(1337, 0),
+    "ticket_code": "A/5 21171",
+    "class": {
+      "class": 3,
+      "description": "Third Class"
+    },
+    "ticket_count": 1,
+    "fare": 7.25,
+    "boarding_port": "Southampton",
+    "destination_port": "New York"
+  }
+],
+  "cabin": {
+    "cabin_name": "C",
+    "cabin_number": 123,
+    "deck": "C",
+    "crew_id": ObjectId("60c72b3f9af1b61b8f8f0c3d")
+  },
+  "lifeboats": [{
+    "capacity": 70,
+    "launch_time": ISODate("1912-04-15T02:05:00Z"),
+    "survivors_count": 20,
+    "crew_id": ObjectId("60c72b3f9af1b61b8f8f0c3d")
+  }
+ ]
+});
+
+
+
+
+db.Passengers.insertOne({
+  "Passengers_id": ObjectId("60c72b2f9af1b61b8f8f0c3d"),
+  "first_name": "Mary",
+  "Last_name": "Smith",
+  "gender": "female",
+  "age": 28,
+  "survived": false,
+  "SibSp": 0,
+  "ParCH": 0,
+  "family_size": 1,
+  "adress": {
+    "country_name": "UK",
+    "street": "456 Queen St",
+    "postal_code": "SW1A 1AA",
+    "town": "London",
+    "state": "England"
+  },
+  "tickets": [{
+    "purchase_date": Timestamp(1337, 0),
+    "ticket_code": "PC 17599",
+    "class": {
+      "class": 1,
+      "description": "First Class"
+    }
+  ],
+    "ticket_count": 1,
+    "fare": 71.28,
+    "boarding_port": "Cherbourg",
+    "destination_port": "New York"
+  },
+  "cabin": {
+    "cabin_name": "B",
+    "cabin_number": 101,
+    "deck": "B",
+    "crew_id": ObjectId("60c72b4f9af1b61b8f8f0c3f")
+  },
+  "lifeboats": [{
+    "capacity": 65,
+    "launch_time": ISODate("1912-04-15T01:45:00Z"),
+    "survivors_count": 22,
+    "crew_id": ObjectId("60c72b4f9af1b61b8f8f0c3f")
+  }
+ ]
+});
+
+
+db.Passengers.insertOne({
+  "Passengers_id": ObjectId("60c72b2f9af1b61b8f8f0c3e"),
+  "first_name": "James",
+  "Last_name": "Brown",
+  "gender": "male",
+  "age": 45,
+  "survived": true,
+  "SibSp": 0,
+  "ParCH": 0,
+  "family_size": 1,
+  "adress": {
+    "country_name": "Canada",
+    "street": "789 Maple Rd",
+    "postal_code": "H2Y 1A6",
+    "town": "Montreal",
+    "state": "Quebec"
+  },
+  "tickets": [{
+    "purchase_date": Timestamp(1337, 0),
+    "ticket_code": "C.A. 24579",
+    "class": {
+      "class": 2,
+      "description": "Second Class"
+    },
+    "ticket_count": 1,
+    "fare": 13.50,
+    "boarding_port": "Queenstown",
+    "destination_port": "New York"
+  }],
+  "cabin": {
+    "cabin_name": "E",
+    "cabin_number": 202,
+    "deck": "E",
+    "crew_id": ObjectId("60d5f60f8a1d4f1f5c5e1a7e")
+  },
+  "lifeboats": [{
+    "capacity": 55,
+    "launch_time": ISODate("1912-04-15T02:20:00Z"),
+    "survivors_count": 23,
+    "crew_id": ObjectId("60d5f60f8a1d4f1f5c5e1a7e")
+  }
+]
+});
